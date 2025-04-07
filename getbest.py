@@ -13,7 +13,7 @@ def getCols(f):
 
 def findTop(f,num_col, mark_col):
     ''' finds the top student in the class '''
-    best = best_idx =  0
+    best = best_idx = max(mark)  
     for line in f:
         data = line.strip().split(",")
         mark = int(data[mark_col])
